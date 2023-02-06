@@ -48,11 +48,13 @@ const server = http.createServer((req, res) => {
   res.end('./public/index.html\n');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+server.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
+})
+  
+  `Server listening on port ${port}`
 
-
+})
 
 
 
